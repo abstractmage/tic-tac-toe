@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  line-height: 1;
+  color: #dfdfdf;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background: #50AF61;
+  padding: 12px 24px;
+  cursor: pointer;
+  pointer-events: none;
+  transition: background 200ms;
+
+  &:hover {
+    body:not(:global(.touch)) & {
+      background: #479e55;
+    }
+  }
+
+  &_clickable {
+    pointer-events: auto;
+  }
+}

@@ -1,0 +1,9 @@
+.main {
+  display: block;
+}
+
+.button {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}

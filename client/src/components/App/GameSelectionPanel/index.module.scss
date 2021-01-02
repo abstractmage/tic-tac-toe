@@ -1,0 +1,18 @@
+.main {
+  display: block;
+}
+
+.text {
+  width: 100%;
+  font-size: 36px;
+  line-height: 1;
+  color: #dfdfdf;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.button {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}

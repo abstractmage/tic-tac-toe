@@ -1,0 +1,126 @@
+.main {
+  display: block;
+}
+
+.panelInner {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-size: 36px;
+  color: #dfdfdf;
+  margin-bottom: 10px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.headLeft,
+.headRight {
+  position: relative;
+  flex-basis: 49%;
+  flex-grow: 0;
+  width: 49%;
+  font-size: 18px;
+  color: #dfdfdf;
+  height: 45px;
+  background: #34495E;
+  border: 1px solid #495D72;
+  border-radius: 50px;
+  transition: opacity 200ms, box-shadow 200ms;
+
+  &_blur {
+    opacity: 0.6;
+  }
+
+  &_lighted {
+    box-shadow: 0 0 5px -2px #dfdfdf;
+  }
+}
+
+.headLeftNickname,
+.headRightNickname {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.headLeftNickname {
+  padding: 0 43px 0 20px;
+}
+
+.headRightNickname {
+  justify-content: flex-end;
+  padding: 0 20px 0 43px;
+}
+
+.headLeftSign {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 43px;
+  height: 100%;
+  padding: 3px;
+}
+
+.headRightSign {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 43px;
+  height: 100%;
+  padding: 3px;
+}
+
+.headSign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #495D72;
+  border-radius: 50px;
+  padding: 8px;
+
+  svg {
+    fill: #dfdfdf;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.field {
+  border-radius: 4px;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #34495E;
+  border: 1px solid #495D72;
+}
+
+.cellWrapper {
+  position: relative;
+  border: 1px solid #495D72;
+}
+
+.roomId {
+  user-select: text;
+  color: #788694;
+  margin-top: 10px;
+  text-align: center;
+}
